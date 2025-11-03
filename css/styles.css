@@ -5,6 +5,11 @@ h1, h2, h3, h4, h5, h6, p {
 ul, li {
     margin: 0;
     padding-left: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -27,14 +32,16 @@ body {
 
 .header {
     border-bottom: 1px solid #E7E9FC;
-    padding-top: 24px;
-    padding-bottom:24px;
 }
 
 .header-container {
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 24px auto;
+     display: flex;
+    width: 1158px;
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    align-items: center;
+    margin-right:auto;
 }
 
 .logo {
@@ -48,6 +55,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-right: 76px;
+    text-decoration: none;
 }
 
 .logo-span {
@@ -62,7 +70,14 @@ body {
     text-transform: uppercase;
 }
 
+.nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
 .nav-list {
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -74,7 +89,7 @@ body {
     gap: 40px;
 }
 
-.nav-list:focus, .nav-list:hover {
+.nav-list:hover, .nav-list:focus {
     color: #404BBF;
 }
 
@@ -99,16 +114,15 @@ body {
 
 .hero {
     background-color: #2E2F42;
-    padding-top: 188px;
-    padding-bottom: 188px;
-    text-align: center;
 }
 
 .hero-container {
     display: flex;
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
+    flex-direction: column;
+    padding-bottom: 188px;
+    padding-top: 188px;
+    align-items: center;
+    text-align: center;
 }
 
 .hero-title {
@@ -119,10 +133,8 @@ body {
     font-style: bold;
     background-color: #2E2F42;
     letter-spacing: 0.02em;
-    text-align: center;
-    margin-bottom: 24px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 48px;
+    width: 496px;
 }
 
 .button {
@@ -136,11 +148,8 @@ body {
     letter-spacing: 0.04em;
     border: none;
     border-radius: 4px;
-    text-align: center;
     width: 169px;
     height: 56px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .button:hover, .button:focus {
@@ -162,13 +171,20 @@ overflow: hidden;
 
 .benefits-section {
     padding: 120px 0;
+    display: flex;
 }
 
 .benefits {
-    flex-basis: calc((100% - 3 * 224px) / 4);
+    flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.benefits-list {
+    display: flex;
+    gap: 24px;
 }
 
 .benefits-text {
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: #434455;
@@ -176,17 +192,30 @@ overflow: hidden;
 }
 
 .benefits-title {
+    font-family: "Roboto", sans-serif;
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
     color: #2E2F42;
     font-style: medium;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.team-container {
+    padding: 120px 0;
 }
 
 .team {
     background-color: #F4F4FD;
-    padding: 120px 0;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .team-title {
@@ -199,6 +228,7 @@ overflow: hidden;
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .team-li {
@@ -207,6 +237,7 @@ overflow: hidden;
 
 .team-img {
     background-color: #FFFFFF;
+    margin-bottom: 32px;
 }
 
 .team-name {
@@ -217,12 +248,66 @@ overflow: hidden;
     font-style: medium;
     background-color: #FFFFFF;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .team-text {
     font-size: 16px;
     line-height: 24px;
     color: #434455;
+    letter-spacing: 0.02em;
+    padding-bottom: 32px;
+}
+
+.portfolio-section {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    color: #2E2F42;
+    font-style: bold;
+    background-color: #FFFFFF;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+
+.portfolio {
+    margin-bottom: 72px;
+}  
+
+.portfolio-list {
+    display: flex;
+    column-gap: 24px;
+    row-gap: 48px;
+    flex-wrap: wrap;
+}
+
+.portfolio-div-text {
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    padding: 24px;
+    text-align: left;
+}
+
+.portfolio-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #2E2F42;
+    font-style: medium;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.portfolio-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #434455;
+    background-color: #FFFFFF;
     letter-spacing: 0.02em;
 }
 
@@ -254,6 +339,7 @@ overflow: hidden;
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 16px;
+    text-decoration: none;
 }
 
 .footer-logo-span {
@@ -266,34 +352,5 @@ overflow: hidden;
     background-color: #2E2F42;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-}
-
-.portfolio {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.11;
-    color: #2E2F42;
-    font-style: bold;
-    background-color: #FFFFFF;
-    letter-spacing: 0.02em;
-    text-align: center;
-    text-transform: capitalize;
-}
-
-.portfolio-title {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    color: #2E2F42;
-    font-style: medium;
-    letter-spacing: 0.02em;
-}
-
-.portfolio-text {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #434455;
-    background-color: #FFFFFF;
-    letter-spacing: 0.02em;
 }
 
