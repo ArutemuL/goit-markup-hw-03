@@ -40,8 +40,9 @@ body {
     margin: 0 auto;
     padding-top: 24px;
     padding-bottom: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
     align-items: center;
-    margin-right:auto;
 }
 
 .logo {
@@ -93,6 +94,10 @@ body {
     color: #404BBF;
 }
 
+.link {
+    padding: 24px 0;
+}
+
 .address-list {
     display: flex;
     gap: 40px;
@@ -114,13 +119,13 @@ body {
 
 .hero {
     background-color: #2E2F42;
+    padding-bottom: 188px;
+    padding-top: 188px;
 }
 
 .hero-container {
     display: flex;
     flex-direction: column;
-    padding-bottom: 188px;
-    padding-top: 188px;
     align-items: center;
     text-align: center;
 }
@@ -134,7 +139,7 @@ body {
     background-color: #2E2F42;
     letter-spacing: 0.02em;
     margin-bottom: 48px;
-    width: 496px;
+    max-width: 496px;
 }
 
 .button {
@@ -148,7 +153,7 @@ body {
     letter-spacing: 0.04em;
     border: none;
     border-radius: 4px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
 }
 
@@ -202,12 +207,9 @@ overflow: hidden;
     margin-bottom: 8px;
 }
 
-.team-container {
-    padding: 120px 0;
-}
-
 .team {
     background-color: #F4F4FD;
+    padding: 120px 0
 }
 
 .team-list {
@@ -287,8 +289,8 @@ overflow: hidden;
 .portfolio-div-text {
     border: 1px solid #e7e9fc;
     border-top: none;
-    padding: 24px;
     text-align: left;
+    padding: 32px 16px
 }
 
 .portfolio-title {
@@ -315,7 +317,6 @@ overflow: hidden;
     background-color: #2E2F42;
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 156px;
 }
 
 .footer-text {
