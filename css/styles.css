@@ -39,11 +39,9 @@ img {
      display: flex;
     width: 1158px;
     margin: 0 auto;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    align-items: center;
     padding-left: 15px;
     padding-right: 15px;
+    align-items: center;
 }
 
 .logo {
@@ -76,6 +74,8 @@ img {
     display: flex;
     align-items: center;
     margin-right: auto;
+    padding-bottom: 24px;
+    padding-top: 24px;
 }
 
 .nav-list {
