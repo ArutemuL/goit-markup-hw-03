@@ -12,18 +12,6 @@ a {
     text-decoration: none;
 }
 
-.container {
-    max-width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-img {
-	display: block;
-	max-width: 100%;
-    height: auto;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
@@ -32,6 +20,19 @@ body {
 
 .header {
     border-bottom: 1px solid #E7E9FC;
+}
+
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+    height: auto;
 }
 
 .header-container {
@@ -90,10 +91,6 @@ body {
 
 .nav-list:hover, .nav-list:focus {
     color: #404BBF;
-}
-
-.link {
-    padding: 24px 0;
 }
 
 .address-list {
