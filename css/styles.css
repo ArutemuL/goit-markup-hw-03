@@ -15,7 +15,8 @@ a {
 .container {
     max-width: 1158px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 img {
@@ -218,6 +219,7 @@ overflow: hidden;
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-title {
@@ -235,11 +237,11 @@ overflow: hidden;
 
 .team-li {
     background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
 }
 
-.team-img {
-    background-color: #FFFFFF;
-    margin-bottom: 32px;
+.team-div {
+    padding: 32px 0;
 }
 
 .team-name {
@@ -258,17 +260,9 @@ overflow: hidden;
     line-height: 24px;
     color: #434455;
     letter-spacing: 0.02em;
-    padding-bottom: 32px;
 }
 
 .portfolio-section {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.11;
-    color: #2E2F42;
-    font-style: bold;
-    background-color: #FFFFFF;
-    letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
     padding-bottom: 120px;
@@ -277,6 +271,13 @@ overflow: hidden;
 
 .portfolio {
     margin-bottom: 72px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    color: #2E2F42;
+    font-style: bold;
+    background-color: #FFFFFF;
+    letter-spacing: 0.02em;
 }  
 
 .portfolio-list {
