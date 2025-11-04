@@ -39,8 +39,8 @@ img {
      display: flex;
     width: 1158px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     align-items: center;
 }
 
@@ -74,8 +74,6 @@ img {
     display: flex;
     align-items: center;
     margin-right: auto;
-    padding-bottom: 24px;
-    padding-top: 24px;
 }
 
 .nav-list {
@@ -83,7 +81,6 @@ img {
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
-    color: #2E2F42;
     font-style: medium;
     background-color: #FFFFFF;
     letter-spacing: 0.02em;
@@ -91,13 +88,15 @@ img {
     gap: 40px;
 }
 
-.nav-list:hover, .nav-list:focus {
+.link:hover, .link:focus {
     color: #404BBF;
 }
 
 .link {
     padding-top: 24px;
     padding-bottom: 24px;
+    display: block;
+    color: #2E2F42;
 }
 
 .address-list {
