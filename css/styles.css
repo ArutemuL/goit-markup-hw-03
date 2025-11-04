@@ -42,6 +42,8 @@ img {
     padding-top: 24px;
     padding-bottom: 24px;
     align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .logo {
@@ -91,6 +93,11 @@ img {
 
 .nav-list:hover, .nav-list:focus {
     color: #404BBF;
+}
+
+.link {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .address-list {
